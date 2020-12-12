@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activity.PhoneLoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_top_107"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/img_back_home_107"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:onClick="back_login"
+            android:src="@drawable/ic_button_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Nhập số điện thoại"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_top_107"
+        android:background="#FAFAFA"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/tv_type_phone_107"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:text="Nhập số di động"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp_107"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            app:ccp_autoDetectCountry = "true"
+            android:layout_below="@+id/tv_type_phone_107"
+            android:background="#ECEEF5"
+            app:ccp_countryAutoDetectionPref="LOCALE_SIM"
+            app:ccp_showFlag="false" />
+
+        <EditText
+            android:id="@+id/edt_input_phone_107"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_below="@+id/tv_type_phone_107"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/ccp_107"
+            android:background="#ECEEF5" />
+        <TextView
+            android:id="@+id/tv_nhac_107"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/ccp_107"
+            android:text="Nhấn vào tiếp tục để xác minh số điện thoại của  bạn. Chúng tôi sẽ gửi SMS để xác minh số điện thoại"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"/>
+        <Button
+            android:id="@+id/btn_continue_107"
+            android:layout_below="@id/tv_nhac_107"
+            android:background="#ECEEF5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiếp"
+            android:textSize="16sp"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_drink_name_107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Choco XMas (L)"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_close_dialog_107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_button_close" />
+
+    <ImageView
+        android:id="@+id/img_drink_107"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tv_drink_name_107"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_choco_xmas" />
+
+    <TextView
+        android:id="@+id/tv_content_drink_107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_drink_name_107"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/img_drink_107"
+        android:text="Chocolate thạch, sữa tươi"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_drink_price_107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_content_drink_107"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/img_drink_107"
+        android:text="55.000đ"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/div1_107"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/img_drink_107"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_sl_107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/div1_107"
+        android:layout_marginTop="20dp"
+        android:text="Số lượng"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/img_descrease_107"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/div1_107"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/tv_sl_107"
+        android:src="@drawable/ic_descrease_green" />
+
+    <TextView
+        android:id="@+id/tv_count_107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/div1_107"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/img_descrease_107"
+        android:text="1"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_plus_107"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/div1_107"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/tv_count_107"
+        android:src="@drawable/ic_plus_green" />
+
+    <View
+        android:id="@+id/div2_107"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_sl_107"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/layout_add_to_cart_107"
+        android:background="@drawable/custom_add_to_cart_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/div2_107"
+        android:padding="15dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_price_107"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="55.000đ"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingStart="20dp"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/tv_add_107"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm vào giỏ hàng"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingRight="20dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>

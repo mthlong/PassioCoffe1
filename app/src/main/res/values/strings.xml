@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Passio Project</string>
+    <string name="title">Green XMAS - Giáng Sinh Xanh, Giáng sinh an lành</string>
+    <string name="description">Green XMAS - Giáng Sinh Xanh, Giáng sinh an lành, mùa giáng sinh lại đến, dánh giấu sự ....</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
